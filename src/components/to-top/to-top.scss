@@ -1,0 +1,24 @@
+to-top {
+    .wapper{
+        width:4rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 50%;
+        border:gray 1px solid;
+        text-align: center;
+        padding:0.7rem;
+        position:fixed;
+        font-size: 1.2rem;
+        .toTop{
+            width:100%;
+            height:100%;
+        }
+        .showPage{
+            font-size: 1rem;
+            hr{
+                background-color:gray;
+                margin:0;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<div [hidden]="hidden" class="wapper" [style.bottom]="bottom" [style.right]="right">
+    <div *ngIf="!isScrolling" class="toTop" (click)="toTop()">返回顶部</div>
+    <div *ngIf="isScrolling" class="showPage">
+        {{current}}
+        <hr>
+        {{total}}
+    </div>
+</div>
