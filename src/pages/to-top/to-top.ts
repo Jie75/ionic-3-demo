@@ -52,8 +52,6 @@ export class ToTopPage {
     {},
   ]
 
-  isScrolling = 0;
-  hidden = false;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -65,12 +63,14 @@ export class ToTopPage {
     }
   }
 
-  ionViewWillEnter(){
-    this.itemHeight=this.item.nativeElement.offsetHeight+12
+  ionViewWillEnter() {
+    let margin = getComputedStyle(this.item.nativeElement).marginTop;
+    this.itemHeight = this.item.nativeElement.offsetHeight + parseInt(margin)
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ToTopPage');
+  ionViewDidEnter() {
+
   }
+
 
 }
